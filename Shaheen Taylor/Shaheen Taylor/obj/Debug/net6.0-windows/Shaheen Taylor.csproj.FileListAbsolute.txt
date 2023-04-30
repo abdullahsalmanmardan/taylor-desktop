@@ -1,0 +1,22 @@
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\bin\Debug\net6.0-windows\Shaheen Taylor.exe
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\bin\Debug\net6.0-windows\Shaheen Taylor.deps.json
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\bin\Debug\net6.0-windows\Shaheen Taylor.runtimeconfig.json
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\bin\Debug\net6.0-windows\Shaheen Taylor.dll
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\bin\Debug\net6.0-windows\Shaheen Taylor.pdb
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.csproj.AssemblyReference.cache
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen_Taylor.Form1.resources
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen_Taylor.Properties.Resources.resources
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.csproj.GenerateResource.cache
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.AssemblyInfoInputs.cache
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.AssemblyInfo.cs
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.csproj.CoreCompileInputs.cache
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.dll
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\refint\Shaheen Taylor.dll
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.pdb
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen Taylor.genruntimeconfig.cache
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\ref\Shaheen Taylor.dll
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen_Taylor.AddCustomer1cs.resources
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen_Taylor.SearchCustomer.resources
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen_Taylor.Measurement.resources
+C:\Users\abdullah salman\Desktop\Shaheen Taylor\Shaheen Taylor\obj\Debug\net6.0-windows\Shaheen_Taylor.UpdateCustomer.resources
