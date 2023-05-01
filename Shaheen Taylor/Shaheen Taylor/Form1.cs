@@ -19,14 +19,15 @@ namespace Shaheen_Taylor
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
-            AddCustomer1cs ad = new AddCustomer1cs();
+
+            Measurement ad = new Measurement();
             ad.TopLevel = false;
             panel4.Controls.Add(ad);
             ad.Width = Screen.PrimaryScreen.Bounds.Width;
             ad.Height = Screen.PrimaryScreen.Bounds.Height - 170;
-            ad.BringToFront();  
+            ad.BringToFront();
             ad.Show();
+            
         }
        
         // search customer
@@ -46,10 +47,7 @@ namespace Shaheen_Taylor
         private void addcustomer_Click(object sender, EventArgs e)
         {
             AddCustomer1cs ad = new AddCustomer1cs();
-            ad.TopLevel = false;
-            panel4.Controls.Add(ad);
-            ad.Width = Screen.PrimaryScreen.Bounds.Width;
-            ad.Height = Screen.PrimaryScreen.Bounds.Height - 170;
+           
             ad.BringToFront();
             ad.Show();
         }

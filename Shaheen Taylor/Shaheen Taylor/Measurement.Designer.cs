@@ -72,7 +72,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtcollarsize = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnsearch = new System.Windows.Forms.Button();
+            this.txtcustomeraddress = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtcustomername = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.txtcustomernumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -234,9 +237,9 @@
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel7.Controls.Add(this.label16);
             this.panel7.Controls.Add(this.txtinstructions);
-            this.panel7.Location = new System.Drawing.Point(15, 124);
+            this.panel7.Location = new System.Drawing.Point(230, 46);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(201, 202);
+            this.panel7.Size = new System.Drawing.Size(153, 202);
             this.panel7.TabIndex = 7;
             // 
             // label16
@@ -263,9 +266,6 @@
             // 
             // panel3
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel3.Controls.Add(this.cbpocket);
             this.panel3.Controls.Add(this.cbsidepocket);
@@ -293,9 +293,9 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtcollarsize);
-            this.panel3.Location = new System.Drawing.Point(221, 41);
+            this.panel3.Location = new System.Drawing.Point(389, 46);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(567, 264);
+            this.panel3.Size = new System.Drawing.Size(399, 264);
             this.panel3.TabIndex = 6;
             // 
             // cbpocket
@@ -305,7 +305,7 @@
             this.cbpocket.Items.AddRange(new object[] {
             "yes",
             "no"});
-            this.cbpocket.Location = new System.Drawing.Point(439, 104);
+            this.cbpocket.Location = new System.Drawing.Point(298, 106);
             this.cbpocket.Name = "cbpocket";
             this.cbpocket.Size = new System.Drawing.Size(87, 23);
             this.cbpocket.TabIndex = 41;
@@ -317,7 +317,7 @@
             this.cbsidepocket.Items.AddRange(new object[] {
             "yes",
             "no"});
-            this.cbsidepocket.Location = new System.Drawing.Point(439, 164);
+            this.cbsidepocket.Location = new System.Drawing.Point(298, 166);
             this.cbsidepocket.Name = "cbsidepocket";
             this.cbsidepocket.Size = new System.Drawing.Size(87, 23);
             this.cbsidepocket.TabIndex = 40;
@@ -327,7 +327,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(439, 201);
+            this.label14.Location = new System.Drawing.Point(298, 203);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(76, 15);
             this.label14.TabIndex = 36;
@@ -338,7 +338,7 @@
             this.txtpricepersuit.BackColor = System.Drawing.Color.Silver;
             this.txtpricepersuit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtpricepersuit.ForeColor = System.Drawing.Color.White;
-            this.txtpricepersuit.Location = new System.Drawing.Point(439, 218);
+            this.txtpricepersuit.Location = new System.Drawing.Point(298, 220);
             this.txtpricepersuit.Name = "txtpricepersuit";
             this.txtpricepersuit.Size = new System.Drawing.Size(87, 29);
             this.txtpricepersuit.TabIndex = 37;
@@ -348,7 +348,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(439, 141);
+            this.label13.Location = new System.Drawing.Point(298, 143);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 15);
             this.label13.TabIndex = 34;
@@ -359,7 +359,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(439, 70);
+            this.label12.Location = new System.Drawing.Point(298, 72);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(74, 15);
             this.label12.TabIndex = 32;
@@ -370,7 +370,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(439, 7);
+            this.label11.Location = new System.Drawing.Point(298, 9);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(84, 15);
             this.label11.TabIndex = 30;
@@ -381,7 +381,7 @@
             this.txttrouserbottom.BackColor = System.Drawing.Color.Silver;
             this.txttrouserbottom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txttrouserbottom.ForeColor = System.Drawing.Color.White;
-            this.txttrouserbottom.Location = new System.Drawing.Point(439, 25);
+            this.txttrouserbottom.Location = new System.Drawing.Point(298, 27);
             this.txttrouserbottom.Name = "txttrouserbottom";
             this.txttrouserbottom.Size = new System.Drawing.Size(87, 29);
             this.txttrouserbottom.TabIndex = 31;
@@ -389,7 +389,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Silver;
-            this.panel5.Location = new System.Drawing.Point(382, 7);
+            this.panel5.Location = new System.Drawing.Point(271, 11);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 254);
             this.panel5.TabIndex = 15;
@@ -399,7 +399,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(204, 201);
+            this.label10.Location = new System.Drawing.Point(160, 204);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 15);
             this.label10.TabIndex = 27;
@@ -410,7 +410,7 @@
             this.txttrouserlength.BackColor = System.Drawing.Color.Silver;
             this.txttrouserlength.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txttrouserlength.ForeColor = System.Drawing.Color.White;
-            this.txttrouserlength.Location = new System.Drawing.Point(204, 218);
+            this.txttrouserlength.Location = new System.Drawing.Point(160, 222);
             this.txttrouserlength.Name = "txttrouserlength";
             this.txttrouserlength.Size = new System.Drawing.Size(87, 29);
             this.txttrouserlength.TabIndex = 28;
@@ -420,7 +420,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(204, 141);
+            this.label9.Location = new System.Drawing.Point(161, 144);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(81, 15);
             this.label9.TabIndex = 25;
@@ -431,7 +431,7 @@
             this.txtarmhole.BackColor = System.Drawing.Color.Silver;
             this.txtarmhole.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtarmhole.ForeColor = System.Drawing.Color.White;
-            this.txtarmhole.Location = new System.Drawing.Point(204, 158);
+            this.txtarmhole.Location = new System.Drawing.Point(160, 162);
             this.txtarmhole.Name = "txtarmhole";
             this.txtarmhole.Size = new System.Drawing.Size(87, 29);
             this.txtarmhole.TabIndex = 26;
@@ -441,7 +441,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(204, 70);
+            this.label8.Location = new System.Drawing.Point(158, 73);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 15);
             this.label8.TabIndex = 23;
@@ -452,7 +452,7 @@
             this.txtlength.BackColor = System.Drawing.Color.Silver;
             this.txtlength.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtlength.ForeColor = System.Drawing.Color.White;
-            this.txtlength.Location = new System.Drawing.Point(204, 87);
+            this.txtlength.Location = new System.Drawing.Point(158, 91);
             this.txtlength.Name = "txtlength";
             this.txtlength.Size = new System.Drawing.Size(87, 29);
             this.txtlength.TabIndex = 24;
@@ -462,7 +462,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(204, 7);
+            this.label7.Location = new System.Drawing.Point(160, 7);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 15);
             this.label7.TabIndex = 21;
@@ -474,7 +474,7 @@
             this.txtwaistsize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtwaistsize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtwaistsize.ForeColor = System.Drawing.Color.White;
-            this.txtwaistsize.Location = new System.Drawing.Point(204, 24);
+            this.txtwaistsize.Location = new System.Drawing.Point(158, 28);
             this.txtwaistsize.Name = "txtwaistsize";
             this.txtwaistsize.Size = new System.Drawing.Size(87, 29);
             this.txtwaistsize.TabIndex = 22;
@@ -484,7 +484,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 201);
+            this.label6.Location = new System.Drawing.Point(21, 193);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 15);
             this.label6.TabIndex = 19;
@@ -495,7 +495,7 @@
             this.txtchestsize.BackColor = System.Drawing.Color.Silver;
             this.txtchestsize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtchestsize.ForeColor = System.Drawing.Color.White;
-            this.txtchestsize.Location = new System.Drawing.Point(12, 218);
+            this.txtchestsize.Location = new System.Drawing.Point(21, 210);
             this.txtchestsize.Name = "txtchestsize";
             this.txtchestsize.Size = new System.Drawing.Size(87, 29);
             this.txtchestsize.TabIndex = 20;
@@ -505,7 +505,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 141);
+            this.label5.Location = new System.Drawing.Point(21, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 15);
             this.label5.TabIndex = 17;
@@ -516,7 +516,7 @@
             this.txtsleevesize.BackColor = System.Drawing.Color.Silver;
             this.txtsleevesize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtsleevesize.ForeColor = System.Drawing.Color.White;
-            this.txtsleevesize.Location = new System.Drawing.Point(12, 158);
+            this.txtsleevesize.Location = new System.Drawing.Point(21, 150);
             this.txtsleevesize.Name = "txtsleevesize";
             this.txtsleevesize.Size = new System.Drawing.Size(87, 29);
             this.txtsleevesize.TabIndex = 18;
@@ -526,7 +526,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 70);
+            this.label4.Location = new System.Drawing.Point(21, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 15);
             this.label4.TabIndex = 15;
@@ -537,7 +537,7 @@
             this.txtshouldersize.BackColor = System.Drawing.Color.Silver;
             this.txtshouldersize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtshouldersize.ForeColor = System.Drawing.Color.White;
-            this.txtshouldersize.Location = new System.Drawing.Point(12, 87);
+            this.txtshouldersize.Location = new System.Drawing.Point(21, 79);
             this.txtshouldersize.Name = "txtshouldersize";
             this.txtshouldersize.Size = new System.Drawing.Size(87, 29);
             this.txtshouldersize.TabIndex = 16;
@@ -545,7 +545,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Silver;
-            this.panel4.Location = new System.Drawing.Point(142, 3);
+            this.panel4.Location = new System.Drawing.Point(133, 7);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 254);
             this.panel4.TabIndex = 14;
@@ -555,7 +555,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 7);
+            this.label3.Location = new System.Drawing.Point(21, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 12;
@@ -566,7 +566,7 @@
             this.txtcollarsize.BackColor = System.Drawing.Color.Silver;
             this.txtcollarsize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtcollarsize.ForeColor = System.Drawing.Color.White;
-            this.txtcollarsize.Location = new System.Drawing.Point(12, 24);
+            this.txtcollarsize.Location = new System.Drawing.Point(21, 25);
             this.txtcollarsize.Name = "txtcollarsize";
             this.txtcollarsize.Size = new System.Drawing.Size(87, 29);
             this.txtcollarsize.TabIndex = 13;
@@ -574,25 +574,58 @@
             // panel2
             // 
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Controls.Add(this.btnsearch);
+            this.panel2.Controls.Add(this.txtcustomeraddress);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.txtcustomername);
+            this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.txtcustomernumber);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(203, 106);
+            this.panel2.Size = new System.Drawing.Size(203, 299);
             this.panel2.TabIndex = 5;
             // 
-            // btnsearch
+            // txtcustomeraddress
             // 
-            this.btnsearch.BackColor = System.Drawing.Color.White;
-            this.btnsearch.BackgroundImage = global::Shaheen_Taylor.Properties.Resources.search;
-            this.btnsearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnsearch.Location = new System.Drawing.Point(161, 34);
-            this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(30, 31);
-            this.btnsearch.TabIndex = 11;
-            this.btnsearch.UseVisualStyleBackColor = false;
-            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
+            this.txtcustomeraddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtcustomeraddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtcustomeraddress.ForeColor = System.Drawing.Color.White;
+            this.txtcustomeraddress.Location = new System.Drawing.Point(7, 196);
+            this.txtcustomeraddress.Name = "txtcustomeraddress";
+            this.txtcustomeraddress.Size = new System.Drawing.Size(191, 35);
+            this.txtcustomeraddress.TabIndex = 14;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(7, 172);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(189, 21);
+            this.label22.TabIndex = 13;
+            this.label22.Text = "Enter Customer address";
+            // 
+            // txtcustomername
+            // 
+            this.txtcustomername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtcustomername.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtcustomername.ForeColor = System.Drawing.Color.White;
+            this.txtcustomername.Location = new System.Drawing.Point(3, 118);
+            this.txtcustomername.Name = "txtcustomername";
+            this.txtcustomername.Size = new System.Drawing.Size(191, 35);
+            this.txtcustomername.TabIndex = 12;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(3, 90);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(177, 21);
+            this.label21.TabIndex = 11;
+            this.label21.Text = "Enter Customer Name";
             // 
             // txtcustomernumber
             // 
@@ -601,7 +634,7 @@
             this.txtcustomernumber.ForeColor = System.Drawing.Color.White;
             this.txtcustomernumber.Location = new System.Drawing.Point(3, 34);
             this.txtcustomernumber.Name = "txtcustomernumber";
-            this.txtcustomernumber.Size = new System.Drawing.Size(152, 35);
+            this.txtcustomernumber.Size = new System.Drawing.Size(191, 35);
             this.txtcustomernumber.TabIndex = 10;
             // 
             // label2
@@ -663,7 +696,6 @@
         private Panel panel4;
         private Label label3;
         private TextBox txtcollarsize;
-        private Button btnsearch;
         private Label label2;
         private TextBox txtcustomernumber;
         private Panel panel7;
@@ -704,5 +736,9 @@
         private Label label20;
         private DateTimePicker dateTimePicker3;
         private DateTimePicker dateTimePicker2;
+        private TextBox txtcustomeraddress;
+        private Label label22;
+        private TextBox txtcustomername;
+        private Label label21;
     }
 }

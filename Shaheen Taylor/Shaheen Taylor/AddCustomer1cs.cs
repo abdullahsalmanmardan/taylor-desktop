@@ -22,7 +22,7 @@ namespace Shaheen_Taylor
         private bool checkIfNumberExist(string query1)
         {
             bool ifExist = false;
-            //query = "select * from users where username='" + txtUsername.Text + "'";
+        
             DataSet ds = fn.getData(query1);
 
             //if table contain no value 
@@ -44,7 +44,7 @@ namespace Shaheen_Taylor
         {
             string name=txtcustomername.Text;
             string phone=txtphone.Text;
-            string email=txtcustemail.Text;
+            
             string address=txtaddress.Text;
 
             if(txtcustomername.Text.Length < 0  || txtphone.Text.Length<0 ) 
@@ -64,12 +64,12 @@ namespace Shaheen_Taylor
                 MessageBox.Show("Customer already exists");
                 return;
             }
-            string query = "insert into customer (phoneNo,email,address,name) values('" + phone + "','" + email + "','" + address + "','" + name + "') ";
+            string query = "insert into customer (phoneNo,address,name) values('" + phone + "','" + address + "','" + name + "') ";
             fn.setData(query, "Customer Added");
 
             txtcustomername.Clear();
             txtphone.Clear();
-            txtcustemail.Clear();
+           
             txtaddress.Clear();
 
         }

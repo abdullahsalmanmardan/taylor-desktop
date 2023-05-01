@@ -38,7 +38,6 @@
             this.completedorders = new System.Windows.Forms.Label();
             this.searchcustomer = new System.Windows.Forms.Label();
             this.addmeasurement = new System.Windows.Forms.Label();
-            this.addcustomer = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -103,7 +102,6 @@
             this.panel3.Controls.Add(this.completedorders);
             this.panel3.Controls.Add(this.searchcustomer);
             this.panel3.Controls.Add(this.addmeasurement);
-            this.panel3.Controls.Add(this.addcustomer);
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.panel3.Location = new System.Drawing.Point(0, 120);
             this.panel3.MaximumSize = new System.Drawing.Size(0, 50);
@@ -127,7 +125,7 @@
             // 
             this.orders.AutoSize = true;
             this.orders.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.orders.Location = new System.Drawing.Point(402, 23);
+            this.orders.Location = new System.Drawing.Point(363, 23);
             this.orders.Name = "orders";
             this.orders.Size = new System.Drawing.Size(118, 20);
             this.orders.TabIndex = 7;
@@ -138,7 +136,7 @@
             // 
             this.completedorders.AutoSize = true;
             this.completedorders.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.completedorders.Location = new System.Drawing.Point(517, 23);
+            this.completedorders.Location = new System.Drawing.Point(501, 23);
             this.completedorders.Name = "completedorders";
             this.completedorders.Size = new System.Drawing.Size(134, 20);
             this.completedorders.TabIndex = 5;
@@ -149,7 +147,7 @@
             // 
             this.searchcustomer.AutoSize = true;
             this.searchcustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.searchcustomer.Location = new System.Drawing.Point(130, 23);
+            this.searchcustomer.Location = new System.Drawing.Point(36, 23);
             this.searchcustomer.Name = "searchcustomer";
             this.searchcustomer.Size = new System.Drawing.Size(129, 20);
             this.searchcustomer.TabIndex = 3;
@@ -160,23 +158,12 @@
             // 
             this.addmeasurement.AutoSize = true;
             this.addmeasurement.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.addmeasurement.Location = new System.Drawing.Point(265, 23);
+            this.addmeasurement.Location = new System.Drawing.Point(201, 23);
             this.addmeasurement.Name = "addmeasurement";
             this.addmeasurement.Size = new System.Drawing.Size(139, 20);
             this.addmeasurement.TabIndex = 2;
             this.addmeasurement.Text = "Add Measurement";
             this.addmeasurement.Click += new System.EventHandler(this.addmeasurement_Click);
-            // 
-            // addcustomer
-            // 
-            this.addcustomer.AutoSize = true;
-            this.addcustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.addcustomer.Location = new System.Drawing.Point(12, 23);
-            this.addcustomer.Name = "addcustomer";
-            this.addcustomer.Size = new System.Drawing.Size(111, 20);
-            this.addcustomer.TabIndex = 0;
-            this.addcustomer.Text = "Add Customer";
-            this.addcustomer.Click += new System.EventHandler(this.addcustomer_Click);
             // 
             // panel4
             // 
@@ -222,7 +209,6 @@
         private Label completedorders;
         private Label searchcustomer;
         private Label addmeasurement;
-        private Label addcustomer;
         private Panel panel4;
         private Label label3;
     }
