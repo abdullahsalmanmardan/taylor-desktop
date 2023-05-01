@@ -64,5 +64,38 @@ namespace Shaheen_Taylor
             ad.BringToFront();
             ad.Show();
         }
+
+        private void orders_Click(object sender, EventArgs e)
+        {
+            PendingOrder ad = new PendingOrder();
+            ad.TopLevel = false;
+            panel4.Controls.Add(ad);
+            ad.Width = Screen.PrimaryScreen.Bounds.Width;
+            ad.Height = Screen.PrimaryScreen.Bounds.Height - 170;
+            ad.BringToFront();
+            ad.Show();
+        }
+
+        private void completedorders_Click(object sender, EventArgs e)
+        {
+            CompletedOrder ad = new CompletedOrder();
+            ad.TopLevel = false;
+            panel4.Controls.Add(ad);
+            ad.Width = Screen.PrimaryScreen.Bounds.Width;
+            ad.Height = Screen.PrimaryScreen.Bounds.Height - 170;
+            ad.BringToFront();
+            ad.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            SEARCHBTDATE ad = new  SEARCHBTDATE();
+            ad.TopLevel = false;
+            panel4.Controls.Add(ad);
+            ad.Width = Screen.PrimaryScreen.Bounds.Width;
+            ad.Height = Screen.PrimaryScreen.Bounds.Height - 170;
+            ad.BringToFront();
+            ad.Show();
+        }
     }
 }

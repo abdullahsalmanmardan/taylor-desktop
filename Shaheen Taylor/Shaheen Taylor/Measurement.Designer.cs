@@ -30,6 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.txttotalbill = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
@@ -45,7 +48,7 @@
             this.cbpocket = new System.Windows.Forms.ComboBox();
             this.cbsidepocket = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.cbpricepersuit = new System.Windows.Forms.TextBox();
+            this.txtpricepersuit = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -73,9 +76,6 @@
             this.txtcustomernumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -88,7 +88,8 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel3);
@@ -99,9 +100,11 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 515);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel6
             // 
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel6.Controls.Add(this.label20);
             this.panel6.Controls.Add(this.dateTimePicker3);
             this.panel6.Controls.Add(this.dateTimePicker2);
@@ -118,6 +121,31 @@
             this.panel6.Size = new System.Drawing.Size(772, 171);
             this.panel6.TabIndex = 10;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(16, 98);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(76, 15);
+            this.label20.TabIndex = 51;
+            this.label20.Text = "Delivery Date";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(16, 116);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(199, 23);
+            this.dateTimePicker3.TabIndex = 50;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(827, -29);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(199, 23);
+            this.dateTimePicker2.TabIndex = 49;
+            // 
             // txttotalbill
             // 
             this.txttotalbill.BackColor = System.Drawing.Color.Silver;
@@ -133,7 +161,6 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label19.Location = new System.Drawing.Point(512, 19);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(51, 15);
@@ -150,6 +177,7 @@
             this.btnOrder.TabIndex = 46;
             this.btnOrder.Text = "Order Now";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // txtquantity
             // 
@@ -166,7 +194,6 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label18.Location = new System.Drawing.Point(272, 19);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(53, 15);
@@ -178,12 +205,11 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label17.Location = new System.Drawing.Point(16, 19);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(31, 15);
+            this.label17.Size = new System.Drawing.Size(64, 15);
             this.label17.TabIndex = 44;
-            this.label17.Text = "Date";
+            this.label17.Text = "Order Date";
             // 
             // dateTimePicker1
             // 
@@ -197,7 +223,6 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label15.Location = new System.Drawing.Point(4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 15);
@@ -206,6 +231,7 @@
             // 
             // panel7
             // 
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel7.Controls.Add(this.label16);
             this.panel7.Controls.Add(this.txtinstructions);
             this.panel7.Location = new System.Drawing.Point(15, 124);
@@ -218,7 +244,6 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label16.Location = new System.Drawing.Point(5, 9);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(124, 15);
@@ -241,10 +266,11 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel3.Controls.Add(this.cbpocket);
             this.panel3.Controls.Add(this.cbsidepocket);
             this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.cbpricepersuit);
+            this.panel3.Controls.Add(this.txtpricepersuit);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.label11);
@@ -307,15 +333,15 @@
             this.label14.TabIndex = 36;
             this.label14.Text = "Price Per Suit";
             // 
-            // cbpricepersuit
+            // txtpricepersuit
             // 
-            this.cbpricepersuit.BackColor = System.Drawing.Color.Silver;
-            this.cbpricepersuit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cbpricepersuit.ForeColor = System.Drawing.Color.White;
-            this.cbpricepersuit.Location = new System.Drawing.Point(439, 218);
-            this.cbpricepersuit.Name = "cbpricepersuit";
-            this.cbpricepersuit.Size = new System.Drawing.Size(87, 29);
-            this.cbpricepersuit.TabIndex = 37;
+            this.txtpricepersuit.BackColor = System.Drawing.Color.Silver;
+            this.txtpricepersuit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtpricepersuit.ForeColor = System.Drawing.Color.White;
+            this.txtpricepersuit.Location = new System.Drawing.Point(439, 218);
+            this.txtpricepersuit.Name = "txtpricepersuit";
+            this.txtpricepersuit.Size = new System.Drawing.Size(87, 29);
+            this.txtpricepersuit.TabIndex = 37;
             // 
             // label13
             // 
@@ -445,6 +471,7 @@
             // txtwaistsize
             // 
             this.txtwaistsize.BackColor = System.Drawing.Color.Silver;
+            this.txtwaistsize.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtwaistsize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtwaistsize.ForeColor = System.Drawing.Color.White;
             this.txtwaistsize.Location = new System.Drawing.Point(204, 24);
@@ -457,7 +484,6 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label6.Location = new System.Drawing.Point(12, 201);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 15);
@@ -500,7 +526,6 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label4.Location = new System.Drawing.Point(12, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 15);
@@ -530,7 +555,6 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label3.Location = new System.Drawing.Point(12, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
@@ -549,6 +573,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Controls.Add(this.btnsearch);
             this.panel2.Controls.Add(this.txtcustomernumber);
             this.panel2.Controls.Add(this.label2);
@@ -567,6 +592,7 @@
             this.btnsearch.Size = new System.Drawing.Size(30, 31);
             this.btnsearch.TabIndex = 11;
             this.btnsearch.UseVisualStyleBackColor = false;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // txtcustomernumber
             // 
@@ -583,7 +609,6 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label2.Location = new System.Drawing.Point(4, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 21);
@@ -595,44 +620,18 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Image = global::Shaheen_Taylor.Properties.Resources.bg;
             this.label1.Location = new System.Drawing.Point(250, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = "Add Customer Measurements";
             // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(827, -29);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(199, 23);
-            this.dateTimePicker2.TabIndex = 49;
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(16, 116);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(199, 23);
-            this.dateTimePicker3.TabIndex = 50;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Image = global::Shaheen_Taylor.Properties.Resources.bg;
-            this.label20.Location = new System.Drawing.Point(29, 101);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(31, 15);
-            this.label20.TabIndex = 51;
-            this.label20.Text = "Date";
-            // 
             // Measurement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(43)))));
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 515);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
@@ -640,6 +639,7 @@
             this.MinimumSize = new System.Drawing.Size(800, 515);
             this.Name = "Measurement";
             this.Text = "Measurement";
+            this.Load += new System.EventHandler(this.Measurement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -670,7 +670,7 @@
         private Label label16;
         private TextBox txtinstructions;
         private Label label14;
-        private TextBox cbpricepersuit;
+        private TextBox txtpricepersuit;
         private Label label13;
         private Label label12;
         private Label label11;

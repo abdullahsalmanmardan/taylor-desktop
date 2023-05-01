@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.orders = new System.Windows.Forms.Label();
             this.completedorders = new System.Windows.Forms.Label();
             this.searchcustomer = new System.Windows.Forms.Label();
             this.addmeasurement = new System.Windows.Forms.Label();
             this.addcustomer = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -112,6 +112,17 @@
             this.panel3.Size = new System.Drawing.Size(800, 50);
             this.panel3.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(657, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Search by date";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // orders
             // 
             this.orders.AutoSize = true;
@@ -121,6 +132,7 @@
             this.orders.Size = new System.Drawing.Size(118, 20);
             this.orders.TabIndex = 7;
             this.orders.Text = "Pending Orders";
+            this.orders.Click += new System.EventHandler(this.orders_Click);
             // 
             // completedorders
             // 
@@ -131,6 +143,7 @@
             this.completedorders.Size = new System.Drawing.Size(134, 20);
             this.completedorders.TabIndex = 5;
             this.completedorders.Text = "CompletedOrders";
+            this.completedorders.Click += new System.EventHandler(this.completedorders_Click);
             // 
             // searchcustomer
             // 
@@ -176,16 +189,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(800, 515);
             this.panel4.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(657, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 20);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Search by date";
             // 
             // Form1
             // 

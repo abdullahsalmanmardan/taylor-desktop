@@ -56,7 +56,7 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(800, 515);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 515);
@@ -72,6 +72,7 @@
             this.btnContact.Size = new System.Drawing.Size(30, 31);
             this.btnContact.TabIndex = 11;
             this.btnContact.UseVisualStyleBackColor = false;
+            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
             // 
             // dataGridView1
             // 
@@ -80,10 +81,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 228);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 190);
+            this.dataGridView1.MaximumSize = new System.Drawing.Size(0, 322);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(787, 322);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(787, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(787, 322);
             this.dataGridView1.TabIndex = 10;
             // 
             // btnname
@@ -96,6 +99,7 @@
             this.btnname.Size = new System.Drawing.Size(30, 31);
             this.btnname.TabIndex = 8;
             this.btnname.UseVisualStyleBackColor = false;
+            this.btnname.Click += new System.EventHandler(this.btnname_Click);
             // 
             // txtcontactSearch
             // 

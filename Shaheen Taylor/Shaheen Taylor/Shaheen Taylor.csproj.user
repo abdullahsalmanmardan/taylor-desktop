@@ -4,10 +4,19 @@
     <Compile Update="AddCustomer1cs.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CompletedOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Measurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PendingOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SEARCHBTDATE.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SearchCustomer.cs">
